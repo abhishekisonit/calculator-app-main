@@ -1,0 +1,61 @@
+:root {
+  --main-bg-2: hsl(0, 0%, 90%);
+  --keyboard-bg-2: hsl(0, 5%, 81%);
+  --screen-bg-2: hsl(0, 0%, 93%);
+  --key-bg-del-reset-2: hsl(185, 42%, 37%);
+  --key-shadow-del-reset-2: hsl(185, 58%, 25%);
+  --key-bg-equal-2: hsl(25, 98%, 40%);
+  --key-shadow-equal-2: hsl(25, 99%, 27%);
+  --key-bg-oprtr-nums-2: hsl(45, 7%, 89%);
+  --key-shadow-oprtr-nums-2: hsl(35, 11%, 61%);
+  --text-white-2: hsl(0, 0%, 100%);
+  --text-dark-2: hsl(60, 10%, 19%);
+}
+
+body {
+  background-color: var(--main-bg-2);
+}
+
+.calc-header {
+  color: var(--text-dark-2);
+}
+
+.switch-input {
+  background-color: var(--keyboard-bg-2);
+}
+
+input:checked {
+  background-color: var(--key-bg-equal-2);
+}
+
+label {
+  color: var(--text-white-2);
+}
+
+.calc-screen {
+  background-color: var(--screen-bg-2);
+  color: var(--text-dark-2);
+}
+
+.calc-buttons {
+  background-color: var(--keyboard-bg-2);
+}
+
+.calc-buttons .del,
+.calc-buttons .reset {
+  color: var(--text-white-2);
+  background-color: var(--key-bg-del-reset-2);
+  box-shadow: 0 2px 0 0 var(--key-shadow-del-reset-2);
+}
+
+.calc-buttons .num-dot-operators {
+  background-color: var(--key-bg-oprtr-nums-2);
+  color: var(--text-dark-2);
+  box-shadow: 0 2px 0 0 var(--key-shadow-oprtr-nums-2);
+}
+
+.calc-buttons .equals {
+  background-color: var(--key-bg-equal-2);
+  color: var(--text-white-2);
+  box-shadow: 0 2px 0 0 var(--key-shadow-equal-2);
+}
